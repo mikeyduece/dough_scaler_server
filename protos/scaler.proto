@@ -1,0 +1,25 @@
+syntax = 'proto3';
+package scaler;
+
+service Scaler {
+  rpc scale(ScaleRequest) returns (ScaleResponse) {}
+}
+
+message ScaleRequest {
+  string name = 1;
+  repeated Ingredient ingredients = 2;
+}
+
+message ScaleResponse {
+  Recipe recipe = 1;
+}
+
+message Ingredient {
+  string name = 1;
+  double amount = 2;
+}
+
+message Recipe {
+  string name = 1;
+  repeated Ingredient ingredients = 2;
+}
