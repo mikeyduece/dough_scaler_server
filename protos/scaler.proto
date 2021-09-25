@@ -17,6 +17,7 @@ message ScaleResponse {
 message Ingredient {
   string name = 1;
   double amount = 2;
+  optional double bakersPercentage = 3;
 }
 
 message Recipe {

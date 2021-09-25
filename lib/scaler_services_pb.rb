@@ -2,7 +2,7 @@
 # Source: scaler.proto for package 'scaler'
 
 require 'grpc'
-require_relative 'scaler_pb'
+require 'scaler_pb'
 
 module Scaler
   module Scaler

@@ -15,6 +15,7 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
     add_message "scaler.Ingredient" do
       optional :name, :string, 1
       optional :amount, :double, 2
+      proto3_optional :bakersPercentage, :double, 3
     end
     add_message "scaler.Recipe" do
       optional :name, :string, 1
