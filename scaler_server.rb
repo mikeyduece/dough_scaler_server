@@ -9,9 +9,7 @@ require 'services/dough_scaler'
 class ScalerServer < Scaler::Scaler::Service
 
   def scale(scale_req, _call)
-    x = Scaler::ScaleResponse.new(recipe: Services::DoughScaler.call(scale_req))
-    require 'pry'; binding.pry
-    x
+    Scaler::ScaleResponse.new(recipe: Services::DoughScaler.call(scale_req))
   end
 
 end
